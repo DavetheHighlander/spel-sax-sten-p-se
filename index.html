@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title> Sten Sax Påse</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+	<link rel="manifest" href="fav/site.webmanifest">
+	<link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+	<div class="game">
+		<h1>Rock scissors papper</h1>
+		<form class="user-name">
+		    <label for="username-container"> Write in your name:</label>
+            <input type="text" id="username">
+			<button class="confirm-username">Confirm</button>
+	    </form>
+		<div class="user-info">
+            <p class="username-display">Username: <span id="displayedUsername"></span></p>
+		<div class="counter-block">
+			<div class="count count-user">0</div>
+			<span>:</span>
+			<div class="count count-comp">0</div>
+		</div>
+		<div class="figure-container">
+			<div class="user-field">
+				<button class="field rock" data-field="r"></button>
+				<button class="field scissors" data-field="s"></button>
+				<button class="field paper" data-field="p"></button>
+			</div>
+			<div class="comp-field">
+				<button class="field rock" data-field="r"></button>
+				<button class="field scissors" data-field="s"></button>
+				<button class="field paper" data-field="p"></button>
+			</div>
+		</div>
+		<h3 class="result">Make your choice </h3>
+	</div>
+	<div class="buttons">
+		<button class="play">Restart </button>
+	</div>
+	<div class="alert-overlay" id="alertOverlay" style="display: none;">
+		<div class="alert-box">
+			<p class="alert-message" id="alertMessage">Spelet startas om</p>
+			<button class="alert-btn" onclick="closeAlert()">Bekräfta</button>
+		</div>
+	</div>
+
+	<audio src="#" class="sound"></audio>
+	<script defer src="js/app.js"> </script>
+</body>
+</html>
